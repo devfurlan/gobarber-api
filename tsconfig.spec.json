@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "baseUrl": "./src",
+        "paths": {
+            "@config/*": [
+                "config/*"
+            ],
+            "@modules/*": [
+                "modules/*"
+            ],
+            "@shared/*": [
+                "shared/*"
+            ]
+        },
+        "types": [
+            "@types/jest"
+        ],
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "**/*.spec.ts",
+        "**/*.d.ts"
+    ]
+}
