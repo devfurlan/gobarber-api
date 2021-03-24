@@ -34,8 +34,8 @@ jobs:
       - name: Run build
         run: yarn build
       
-      - name: Copy dist to Digital Ocean
-        uses: appleboy/scp-action@main
+      - name: Copy files to Digital Ocean
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
